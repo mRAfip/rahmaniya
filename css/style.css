@@ -36,6 +36,7 @@
 :root{
 
   --primary-color: red;
+  --brand-color-brown : #7F3619;
 }
 
 #preloader {
@@ -951,7 +952,7 @@ header nav ul li:first-child {
   }
 }
 header.fixed_header nav ul li a {
-  color: #fff;
+  color: var(--brand-color-brown);
 }
 header.fixed_header nav ul li a.animated_link:before {
   background-color: #fff;
@@ -1202,6 +1203,37 @@ header.fixed_header.sticky .hamburger__inner::after {
 @media (max-width: 767px) {
   .nav_panel {
     width: 100%;
+  }
+}
+
+.link_color{
+
+  color: #fff !important;
+}
+
+.white{
+
+  color: #fff !important;
+}
+
+.link_color.scrolled {
+  color: #000 !important; /* color after scroll */
+}
+
+.hero-bg{
+
+  background-image: url('../img/home.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+}
+
+@media (max-width: 768px) {
+  .hero-bg {
+    background-image: url('../img/hero-mobile.jpg'); /* Optional: use a mobile-optimized image */
+    height: 90vh; /* You can tweak height if needed */
   }
 }
 

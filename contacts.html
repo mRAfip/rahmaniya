@@ -51,14 +51,14 @@
                         <div class="logo_panel"><img src="img/logo_sticky.png" width="135" height="45" alt=""></div>
                         <nav id="mainNav">
                             <ul>
-                                <li><a href="index.html" class="animated_link">Home</a></li>
-                                <li><a href="#facilities" class="animated_link">Our facilities</a></li>
-                                <li><a href="#programmes" class="animated_link">Our Programmes</a></li>
-                                <li><a href="about.html" class="animated_link">About</a></li>
-                                <li><a href="gallery.html" class="animated_link">Gellery</a></li>
+                                <li><a href="index.html" class="animated_link link_color">Home</a></li>
+                                <li><a href="#facilities" class="animated_link link_color">Our facilities</a></li>
+                                <li><a href="#programmes" class="animated_link link_color">Our Programmes</a></li>
+                                <li><a href="about.html" class="animated_link link_color">About</a></li>
+                                <li><a href="gallery.html" class="animated_link link_color">Gellery</a></li>
                         
                                 
-                                <li><a href="contacts.html" class="btn_1">Contact</a></li>
+                                <li><a href="contacts.html" class="btn_1 link_color">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -242,7 +242,7 @@
         <!--/container-->
         <div class="copy">
             <div class="container">
-                © Rahmaniyya - by <a href="https://www.midlandpixels.com/">Hostncode</a>
+                © Rahmaniyya - by <a href="https://www.hostncode.com/">Hostncode</a>
             </div>
         </div>
     </footer>
@@ -282,6 +282,17 @@
             window.open(whatsappURL, "_blank");
         });
         </script>
+
+<script>
+    window.addEventListener("scroll", function () {
+      const links = document.querySelectorAll(".link_color");
+      if (window.scrollY > 50) {
+        links.forEach(link => link.classList.add("scrolled"));
+      } else {
+        links.forEach(link => link.classList.remove("scrolled"));
+      }
+    });
+  </script>
         
 
 <!-- COMMON SCRIPTS -->
